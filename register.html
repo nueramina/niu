@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://www.niuniuds.com/index/page/show.html?id=8 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>联系我们 牛牛电商-利润共享，开启电商3.0新时代</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="header_bg">
+    <div class="header">
+      <div class="logo"><img src="images/37e2c8c8d999183982bc24185c0f195d.jpg" width="400" height="75"></div>
+      <div class="hright"><img src="images/28afd537b50a80d3dc1ca72137d2e1ae.jpg" width="300" height="75"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/dropdown.js"></script>
+  <div class="register_top"></div>
+  <div class="register">
+    <div class="register_left"></div>
+    <div class="register_right">
+      <img src="images/niuniu.png" alt="" />
+      <form action="" id="niuLogin">
+       <input type="text" placeholder="用户名 / 手机号" />
+        <input type="text" placeholder="验证码" />
+        <input type="button"  value="获取验证码" id="btn">
+        <input type="text" placeholder="密码" />
+        <button type="submit"> 注 册 </button>
+      </form>
+      <div class="register_footer">
+        已有账号？ <a href="login.html"> 登 录 </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bg">
+    <div class="cont">
+      <ul>
+        <li>
+          <span style="display:inline-block;margin-bottom:30px;">走进我们</span>
+          <p><a href="compnyinfo.html">公司简介</a></p>
+          <p><a href="companyintell.html">公司资质</a></p>
+          <p><a href="companyview.html">公司环境</a></p>
+        </li>
+        <li>
+          <span style="display:inline-block;margin-bottom:30px;">新闻资讯</span>
+          <p><a href="industry.html">行业资讯</a></p>
+          <p><a href="companystate.html">公司动态</a></p>
+        </li>
+        <li class="wx" style="margin: 0 10px;">
+          <img src="images/942cf81fcb1538dacdfbb50f7be8ce8f.png" width="160"><br>
+          <i>手机商城</i>
+        </li>
+        <li class="wx" style="margin: 0 10px;">
+          <img src="images/942cf81fcb1538dacdfbb50f7be8ce8f.png" width="160"><br>
+          <i>微信公众号</i>
+        </li>
+      </ul>
+      <div class="copy">版权所有：牛牛电商-利润共享，开启电商3.0新时代　　备案号：
+        <a href="http://www.miitbeian.gov.cn/" target="_blank">浙ICP备17034166号</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/top.js"></script>
+  <div class="floating_ck">
+    <dl>
+      <dt></dt>
+
+      <dd class="return">
+        <span onclick="gotoTop();return false;">返回顶部</span>
+        <div class="floating_left"><a onclick="gotoTop();return false;">返回顶部</a></div>
+      </dd>
+      <dd class="words">
+        <span>服务热线</span>
+        <div class="floating_left">
+          400-0227677            </div>
+        </dd>
+        <dd class="quote">
+          <span>售后咨询</span>
+          <div class="floating_left"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3436966822&amp;site=qq&amp;menu=yes">
+            <!--<img src="picture/qq_icon.png" />-->
+            售后:3436966822</a></div>
+          </dd>
+          <dd class="quote">
+            <span>业务咨询</span>
+            <div class="floating_left"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=:config(%27qq2%27)}&amp;site=qq&amp;menu=yes">
+              <!--<img src="picture/qq_icon.png" />-->
+              业务:3436966822</a></div>
+            </dd>
+            <dd class="qrcord">
+              <div class="floating_left floating_ewm">
+                <p class="qrcord_p01">微信二维码</p>
+                <i><img src="images/942cf81fcb1538dacdfbb50f7be8ce8f.png" width="130"></i>
+              </div>
+            </dd>
+
+          </dl>
+        </div>
+<script>
+  var wait=90;
+  function time(o) {
+        if (wait == 0) {
+            o.removeAttribute("disabled");           
+            o.value="获取验证码";
+            wait = 90;
+        } else {
+            o.setAttribute("disabled", true);
+            o.style.background = "#999";
+            o.value="重新发送(" + wait + ")";
+            wait--;
+            setTimeout(function() {
+                time(o)
+            },
+            1000)
+        }
+    }
+  document.getElementById("btn").onclick=function(){time(this);}
+</script>
+</body>
+</html>
